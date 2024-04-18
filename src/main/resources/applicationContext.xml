@@ -5,11 +5,5 @@
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="myDay" class="com.taraskina.top.hwspring01.English"/>
-    <bean id="myDay1" class="com.taraskina.top.hwspring01.Italian"/>
-    <bean id="myDay2" class="com.taraskina.top.hwspring01.German"/>
-
-    <bean id="myPerson" class="com.taraskina.top.hwspring01.Person">
-        <constructor-arg  ref="myDay1"/>
-    </bean>
+    <context:component-scan base-package="com.taraskina.top.hwspring01"/>
 </beans>
